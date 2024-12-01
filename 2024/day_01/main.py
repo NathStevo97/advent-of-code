@@ -1,6 +1,6 @@
-# Open file and split rows into columns
+# Part 1
 with open('./input.txt') as file:
-    columns = list(zip(*(map(int, row.split()) for row in file))) # read input file and split into groups based on new lines
+    columns = list(zip(*(map(int, row.split()) for row in file))) # # Open file and split rows into columns
 
 # Sort each column into numerically ascending order
 sortedColumn1 = sorted(columns[0], key=int, reverse=False)
