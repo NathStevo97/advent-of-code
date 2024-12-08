@@ -1,6 +1,6 @@
 def main():
     # Read the input file and split each line into a list of strings
-    with open("./input.txt") as file:
+    with open("./inputs/input_2.txt") as file:
         reports = [line.split() for line in file]
 
     part1(reports) # 257
@@ -17,7 +17,7 @@ def part1(reports):
         if is_valid_report(levels):
             valid_reports += 1
 
-    print(valid_reports)
+    print(f"Number of valid reports: {valid_reports}")
 
 
 def part2(reports):
@@ -47,7 +47,7 @@ def part2(reports):
         if valid_with_dampener:
             valid_reports += 1
 
-    print(valid_reports)
+    print(f"Number of valid reports post-damping: {valid_reports}")
 
 
 def is_valid_report(levels):

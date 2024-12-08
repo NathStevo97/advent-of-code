@@ -1,5 +1,5 @@
 # Part 1
-with open('./input.txt') as file:
+with open('./inputs/input_1.txt') as file:
     columns = list(zip(*(map(int, row.split()) for row in file))) # # Open file and split rows into columns
 
 # Sort each column into numerically ascending order
